@@ -7,7 +7,7 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}">
+        <li class="pokemon ${pokemon.type}" onclick="window.location.href='/pokemon-detail.html?id=${pokemon.number}'" title="Ver detalhes de ${pokemon.name}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
